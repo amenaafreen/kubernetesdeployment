@@ -1,10 +1,10 @@
-String basePath = 'jobfolder'
+String basePath = 'jobfolder1'
 String gitRepository = 'amenaafreen/kubernetesdeployment'
 
 folder(basePath) {
     description('Folder containing all jobs for folder')
 }
-   mavenJob("$basePath/maven-job") {
+   mavenJob("$basePath/maven_job") {
    description('Build the Java Project: ' + gitRepository)
     scm {
         github(gitRepository, 'master')

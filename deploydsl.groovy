@@ -34,8 +34,8 @@ folder(basePath) {
     details {
       artifactoryUrl('http://localhost:8081/artifactory')
       artifactoryName('Artifactory Version 4.15.0')
-      repositoryKey('Jenkins-Integration')
-      snapshotsRepositoryKey('Jenkins-Snapshot')
+      repositoryKey('Jenkins-Integration1')
+      snapshotsRepositoryKey('Jenkins-Snapshot1')
     }
     deployBuildInfo(true)
     deployArtifacts(true)

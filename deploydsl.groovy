@@ -22,7 +22,7 @@ folder(basePath) {
 
      shell ("""kubectl apply -f webdeploy.yml &&\
                kubectl apply -f mysqldeployment.yml &&\
-               sleep 10s
+               sleep 10s &&\
                echo "APP URL" &&\
                curl -Is http://localhost:30003/LoginWebApp/""")
        

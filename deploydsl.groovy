@@ -5,7 +5,7 @@ folder(basePath) {
     description('Folder containing all jobs for folder')
 }
    mavenJob("$basePath/maven_job") {
-   description('Build the Java Project: ' + gitRepository)
+   description('Build the  Project: ' + gitRepository)
     scm {
         github(gitRepository, 'master')
     }
